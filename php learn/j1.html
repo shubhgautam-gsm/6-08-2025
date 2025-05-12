@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const car = {
+  brand: "Toyota",
+  model: "Corolla",
+  year: 2023
+};
+
+console.log("brand" in car);   // true
+console.log("color" in car);   // false
+
+// Example with array
+const fruits = ["Apple", "Banana", "Mango"];
+console.log(0 in fruits);      // true (index 0 exists)
+console.log(3 in fruits);      // false (index 3 does not exist)
+
+// Example with prototype
+function Person(name) {
+  this.name = name;
+}
+
+Person.prototype.age = 30;
+
+const person1 = new Person("John");
+
+console.log("name" in person1);  // true (own property)
+console.log("age" in person1);   // true (inherited property)
+
+</script>
+</html>
+
+
+

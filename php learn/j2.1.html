@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+<script>
+    // == same to same ||   includes() samavesh   
+    let format='@gmail.com'
+    let email='jaygmail.com'
+    if(email.includes(format) ){
+        document.getElementById("demo").innerHTML = "Welcome "+email;
+        console.log("Welcome",email)
+    }else{
+        document.getElementById("demo").innerHTML = "Invalid Email "+email+' because not having '+format;
+    }
+</script>
+</html>
