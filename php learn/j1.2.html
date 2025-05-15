@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+    <h1>JavaScript Variables</h1>
+    <h2>Creating a Variable</h2>
+    <p id="demo"></p>
+
+    <script>
+        // Create and a Variable:
+        let col = prompt('give color:')
+        let mod = prompt('give model:')        
+        let col2 = prompt('give color2:')
+        let mod2 = prompt('give model2:')
+
+        class Car {
+            constructor(col, mod) {
+                this.color = col;
+                this.model = mod;
+            }
+        }
+
+        car1=new Car(col,mod)
+        car2=new Car(col2,mod2)
+
+        console.log(car1)
+        console.log(car2)
+
+        document.getElementById("demo").innerHTML = "Car: " + car1.color;
+    </script>
+
+</body>
+
+</html>

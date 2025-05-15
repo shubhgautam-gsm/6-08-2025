@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+for(i=6;i>=1;i--){
+	for(j=1;j<=i;j++){
+		document.getElementById('demo').innerHTML+='*'
+	}
+    
+  	for(j=6;j>i;j--){
+	   	document.getElementById('demo').innerHTML+='$'
+    }  
+     for(j=6;j>i;j--){
+	   	document.getElementById('demo').innerHTML+='$'
+    }  
+  	for(j=1;j<=i;j++){
+		document.getElementById('demo').innerHTML+='*'
+	}
+    document.getElementById('demo').innerHTML+='<br>'
+
+}
+
+
+for(i=6;i>=1;i--){
+
+  	for(j=7;j>i;j--){
+	   	document.getElementById('demo').innerHTML+='*'
+    }  
+    for(j=1;j<i;j++){
+	   	document.getElementById('demo').innerHTML+='$'
+    }
+    for(j=0;j<i;j++){
+	   	document.getElementById('demo').innerHTML+='$'
+    }
+    for(j=6;j>i;j--){
+	   	document.getElementById('demo').innerHTML+='*'
+    } 
+    document.getElementById('demo').innerHTML+='<br>'
+
+}
+
+
+
+</script>
+</body>
+</html>

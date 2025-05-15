@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Variables</h1>
+<h2>Creating a Variable</h2>
+<p id="demo"></p>
+
+<script>
+// Create and a Variable:
+let car={};
+let car2={};
+console.log(car)
+let col=prompt('give color:')
+let mod=prompt('give model:')
+let col2=prompt('give color2:')
+let mod2=prompt('give model2:')
+//car.color="red";
+//car.model="volvo";
+car.color=col;
+car.model=mod;
+car2.color=col2;
+car2.model=mod2;
+//car={color: 'red', model: 'i12'}
+console.log(car)
+console.log(car2)
+
+document.getElementById("demo").innerHTML = "Car: " +  car.color;
+document.getElementById("demo").innerHTML = "Car: " +  car2.color;
+</script>
+
+</body>
+</html>

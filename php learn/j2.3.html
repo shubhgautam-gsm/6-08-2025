@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+</body>
+<script>   // == same to same ||   includes() samavesh   
+    let format = ['.JPG','.PNG','.SVG']
+    let image = 'NATURE.PNG'.toLocaleUpperCase()
+    if (image.includes(format[0]) || image.includes(format[1]) || image.includes(format[2])) {
+        if (image.includes('.JPG')) {
+            document.getElementById("demo").innerHTML = "Welcome " + image + 'good u have use format' + format1;
+            console.log("SUCCESSFUL SAVE IMAGE ", image)
+        }
+        else if (image.includes('.PNG')) {
+            document.getElementById("demo").innerHTML = "Welcome " + image + 'good u have use format' + format2;
+            console.log("SUCCESSFUL SAVE IMAGE ", image)
+        } else if (image.includes('.SVG')) {
+            document.getElementById("demo").innerHTML = "Welcome " + image + 'good u have use format' + format3;
+            console.log("SUCCESSFUL SAVE IMAGE ", image)
+        }
+      
+    } else {
+        document.getElementById("demo").innerHTML = `Invalid IMAGE URL ${image} because not having 
+        ${format1}||${format2}||${format3} `;
+    }
+</script>
+
+</html>
