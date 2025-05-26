@@ -1,0 +1,2 @@
+first=new,  second=first , third=second  unshift add data at first so all data moves one
+step forward i.e 0->1 ;1->2   second=first ; third=second

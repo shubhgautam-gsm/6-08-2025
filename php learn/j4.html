@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>player1</h1>
+    <h2 id="result1">0</h2>
+    <hr>
+    <h1>player2</h1>
+    <h2 id="result2">0</h2>
+    <button onclick="player1()">p1</button>
+    <button onclick="player2()">p2</button>
+</body>
+<script>
+    let options=[1,2,3,4,5,6]
+
+    console.log(player1)
+    
+    function player1(){
+        let player1Choice=options[parseInt(Math.random()*5)]
+        document.getElementById('result1').innerHTML=player1Choice
+    }
+      function player2(){
+        let player2Choice=options[parseInt(Math.random()*5)]
+        document.getElementById('result2').innerHTML=player2Choice
+    }
+</script>
+</html>

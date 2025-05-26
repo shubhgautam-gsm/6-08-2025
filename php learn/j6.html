@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>player1</h1>
+    <h2 id="result1">0</h2>
+    <hr>    
+    <h1>player2</h1>
+    <h2 id="result2">0</h2>
+    <button onclick="game_start()">start</button>
+</body>
+<script>
+    let options = [1, 2, 3, 4, 5, 6]
+
+
+
+    function game_start() {
+        function player1() {
+            let player1Choice = options[parseInt(Math.random() * 6)]
+            let score=0;
+            
+            if (player1Choice != 6) {
+                score++;
+                document.getElementById('result1').innerHTML = score
+
+            }
+            else{
+                
+                document.getElementById('result1').innerHTML = score
+
+            }
+        }
+        function player2() {
+            let player2Choice = options[parseInt(Math.random() * 6)]
+            let score = 0
+            if (player2Choice != 6) {
+                score++;
+                console.log(typeof(score))
+                document.getElementById('result2').innerHTML = score
+                console.log(score)
+            }
+            else{
+                
+                document.getElementById('result2').innerHTML = score
+            }
+
+        }
+        player1()
+        player2()
+    }
+
+</script>
+
+</html>

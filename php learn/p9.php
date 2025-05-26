@@ -8,8 +8,8 @@ $x = "hello";
 $y = "world"; 
  
 
-echo "$x $y";
-echo "$x$y";
+echo "$x $y<br>";
+echo "$x$y<br>";
 echo $x.$y;
 ?>
 
