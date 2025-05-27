@@ -15,8 +15,15 @@ class Car {
   }
 }
 
-$myCar = new Car("red", "Volvo");
-var_dump($myCar->color);
+// Car={
+
+// }
+// Car.model='a55fsz'
+// Car.color='red'
+
+$volvo = new Car("red", "Volvo");
+$bmw = new Car("green", "bmw");
+var_dump($volvo->model);
 ?>
 
 </body>
