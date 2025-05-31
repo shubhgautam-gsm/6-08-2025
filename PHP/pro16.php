@@ -25,6 +25,10 @@
         }
 
         printer();
+        printer();
+        printer();
+        printer();
+        printer();
     ?>
 </body>
 </html>
