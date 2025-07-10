@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html>
 <body>
-
 <?php
 $x = 5; // global scope
  
 function myTest() {
-  $x ; // local scope
-    //global $x; // access global variable $x
+ global $x;
+
   // using x inside this function will generate an error
-  echo "<p>Variable x inside function is: $x</p>";
+  echo "<h1>Variable x inside function is: $x</h1>";
 } 
 myTest();
 myTest();
 myTest();
 myTest();
 myTest();
-myTest();
 
-echo "<p>Variable x outside function is: $x</p>";
 ?>
 
 </body>

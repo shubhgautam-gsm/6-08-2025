@@ -6,6 +6,7 @@
 $car = array(
         "brand" => [
 				  "Ford",
+          "Toyota",
           "Fiat" => ["red","yellow"]
         ],
         "model"=>"Mustang",
@@ -13,7 +14,8 @@ $car = array(
                 );
 
  
-  echo $car["model"]."<BR>" ;
+  // echo $car["brand"]["Fiat"][1]."<BR>" ;
+  echo $car[0]."<BR>" ;
 
 
 ?>
